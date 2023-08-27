@@ -1,0 +1,462 @@
+/* Fuente local */
+@font-face {
+    font-family: "titulos_grandes";
+    src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+
+/* Fuente Web */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap');
+/* Para usar, copiar: font-family: 'Lato', sans-serif; */
+
+/* Formateo de documentos en general */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Formato General a todos los headers */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    /* width: 100vw;  */
+    height: 15vh;
+}
+
+.header div {
+    /* display: inline-block; */
+}
+
+.header img {
+    width: 20vh;
+    height: auto;
+}
+
+.header nav {
+    /* display: inline-block; */
+    /* position: absolute;
+    top: 2%; */
+    /* width: 70%; */
+    text-align: right;
+}
+
+.header ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.header a {
+    text-decoration: none;
+    color:#2B2D42;
+
+}
+
+.header a:hover {
+    color: #22AAA1;
+}
+
+.header a:visited {
+    color: #2B2D42;
+}
+
+.header li {
+    display: flex;
+    list-style: none;
+    /* padding: 4px 4px; */
+    padding: 5px 15px;
+    margin: 4px 4px;
+    align-items: center;
+
+}
+
+.header .li--active {
+    background-color: #2B2D42;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+.header .li--active a {
+    color:#FFFFFF;
+}
+
+
+/* Formato al FOOTER */
+.footer {
+    /* display: block; */
+    display: flex;
+    height: 13vh;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer img {
+    display: inline-block;
+    /* position: relative;
+    left: 30%; */
+    width: 15vh;
+    height: auto;
+}
+
+.footer a {
+    display: inline-block;
+    /* position: relative;
+    left: 55%; */
+}
+
+.footer p {
+    display: inline-block;
+}
+
+/* Formato h1 general */
+h1:hover {
+    color: #916c80;
+}
+
+h1 {
+    font-family: "titulos_grandes";
+}
+
+/* Formato a general */
+a {
+    text-decoration: none;
+}
+
+/* Formato al Index */
+#index__main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+#index__main .div {
+    /* margin: 20px; */
+    position: relative;
+    display: inline-block;
+    /* display: flex; */
+    /* display: flex; */
+    /* display: inline; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+
+}
+
+#index__main .div__img {
+    /* width: 100%; */
+    /* width: 100vw; */
+    /* display: inline-block; */
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    opacity: .45;
+}
+
+#index_main .div__div1 {
+    background-color: #22aaa1;
+    position: absolute; 
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    /* z-index: 2px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(35, 35, 35, 0.8);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px; */ 
+}
+
+#index__main .div__h1 {
+    /* position:relative; */
+    font-family: "titulos_grandes";
+    font-size: 85px;
+    /* color: #FFFFFF; */
+    color: #2B2D42;
+    margin: 20px;
+    padding: 10px 40px;
+    /* background-color: #2B2D42; */
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    position: absolute; 
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* position: absolute;
+    top: 10px;
+    left: 10px; */
+
+}
+
+#index__main .div__h1:hover {
+    color: #22AAA1;
+}
+
+#index__main .div__p {
+    /* position:relative; */
+    font-size: 30px;
+    margin: 20px;
+    /* color: #ffffff; */
+    color: #2B2D42;
+    padding: 0 15px;
+    width: 50vw;
+    /* background-color: #2B2D42; */
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute; 
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+
+/* Formato a Hoja Qué hacemos */
+
+/* #que_hacemos section {
+    display: block;
+    margin: 50px 50px;
+} */
+
+#que_hacemos {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+    align-items: center;
+}
+
+#que_hacemos .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+        "seccion__1_1 seccion__1_2 seccion__1_3"
+        "seccion__2_1 seccion__2_2 seccion__2_3";
+    align-items: start;
+    justify-items: center;
+    max-width: 100%;
+    margin: auto;
+}
+
+.seccion__1_1 {
+    grid-area: seccion__1_1;
+}
+
+.seccion__1_2 {
+    grid-area: seccion__1_2;
+}
+
+.seccion__1_3 {
+    grid-area: seccion__1_3;
+}
+
+.seccion__2_1 {
+    grid-area: seccion__2_1;
+}
+
+.seccion__2_2 {
+    grid-area: seccion__2_2;
+}
+
+.seccion__2_3 {
+    grid-area: seccion__2_3;
+}
+
+#que_hacemos .section__img {
+    display: block;
+    width: 20vw;
+    height: auto;
+}
+
+
+#que_hacemos section div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+
+}
+
+#que_hacemos .section div:hover {
+    color: #22AAA1;
+}
+
+#que_hacemos section .titulo_imagen {
+    display: inline-block;
+    font-family: "titulos_grandes";
+    font-weight: 700;
+    font-size: large;
+}
+
+/* #que_hacemos .section p:not(.titulo_imagen) { */
+#que_hacemos .section p {
+    width: 20vw;
+}
+
+
+#que_hacemos .titulo {
+    margin: 20px;
+}
+
+/* Formato a página Quiénes Somos */
+
+
+#quienes_somos h1 {
+    font-family: "titulos_grandes";
+    /* font-size: 40px; */
+}
+
+#quienes_somos .seccion_1 {
+    display: block;
+    text-align: center;
+}
+
+#quienes_somos .seccion_2 {
+    /* display: inline-block; */
+    /* background-color: #e8d7ff; */
+    /* margin: 50px 50px; */
+    /* padding: 5px; */
+
+}
+
+#quienes_somos .seccion_2 div {
+    /* display: inline-block; */
+    margin: 5px;
+    padding: 5px
+}
+
+#quienes_somos .seccion_2 div img {
+    /* display: inline-block; */
+    max-width: 25vw;
+
+}
+
+#quienes_somos .seccion_2 .titulo_imagen {
+    /* display: block; */
+    font-family: "titulos_grandes";
+    font-size: 30px;
+    text-align: center;
+    /* background-color: #22AAA1; */
+}
+
+#quienes_somos .seccion_2 p {
+    text-align: center;
+    /* background-color: #916c80; */
+    font-size: 20px;
+}
+
+
+/* Formato a hoja Trabajos Realizados */
+
+#trabajos_realizados {
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+}
+
+#trabajos_realizados .div_0 {
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#trabajos_realizados .div_1 {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #916C80; */
+    margin: 30px;
+    /* width: 75vh; */
+    text-align: left;
+    position: relative;
+    justify-content: space-around;
+}
+
+#trabajos_realizados .div_1 div {
+    margin:20px;
+    padding: 10px 15px;
+    height: fit-content;
+
+}
+
+#trabajos_realizados .div_1 div:hover {
+    color: #22AAA1;
+    background-color: #2B2D42;
+}
+
+
+
+#trabajos_realizados div img {
+    display: block;
+    width: 75vh;
+    height: auto;
+    border-radius: 5px;
+}
+
+#trabajos_realizados .div_1 p:not(.titulo_imagen) {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    width: 75vh;
+    padding: 10px 0;
+}
+#trabajos_realizados div .titulo_imagen {
+    font-family: "titulos_grandes";
+    margin: 10px 0px 10px 0px;
+    font-size: 25px;
+    display: inline-block;
+    width: 75vh;
+    height: auto;
+}
+
+
+/* Formato Hoja Contacto */
+#contacto div {
+    display: block;
+    margin: 20px;
+}
+
+#contacto .section-1 {
+    /* width: 100%; */
+    background-color: #2B2D42;
+}
+
+#contacto .section-1__form {
+    /* max-width: 70vw; */
+    max-width: 75%;
+}
+
+#contacto .section-1 div {
+    /* max-width: 70vw; */
+    max-width: 50%;
+    background-color: #22aaa1;
+}
+
+#contacto .section_1__div2 div {
+    width:fit-content;
+    margin: 0 0 0 40px;
+}
+
+#contacto div label {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+#contacto .como_llegar {
+    margin: 20px;
+}
+
+#contacto .como_llegar p {
+    font-family: "titulos_grandes";
+    font-size: 20px;
+}
+
+#contacto .como_llegar iframe {
+    margin: 20px;
+}
