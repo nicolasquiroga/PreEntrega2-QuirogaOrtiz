@@ -52,7 +52,7 @@
 
 .header a {
     text-decoration: none;
-    color:#2B2D42;
+    color: #2B2D42;
 
 }
 
@@ -79,8 +79,9 @@
     padding: 15px 15px;
     border-radius: 5px;
 }
+
 .header .li--active a {
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 
@@ -159,22 +160,24 @@ a {
 
 #index_main .div__div1 {
     background-color: #22aaa1;
-    position: absolute; 
+    position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -55%);
+    font-family: 'Lato', sans-serif;
     /* z-index: 2px;
     transform: translate(-50%, -50%);
     background-color: rgba(35, 35, 35, 0.8);
     padding: 20px;
     margin: 20px;
-    border-radius: 10px; */ 
+    border-radius: 10px; */
 }
 
 #index__main .div__h1 {
     /* position:relative; */
     font-family: "titulos_grandes";
-    font-size: 85px;
+    /* font-size: 85px; */
+    font-size: 5vw;
     /* color: #FFFFFF; */
     color: #2B2D42;
     margin: 20px;
@@ -182,7 +185,7 @@ a {
     /* background-color: #2B2D42; */
     background-color: #FFFFFF;
     border-radius: 15px;
-    position: absolute; 
+    position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -198,16 +201,18 @@ a {
 
 #index__main .div__p {
     /* position:relative; */
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 2vw;
     margin: 20px;
     /* color: #ffffff; */
     color: #2B2D42;
     padding: 0 15px;
-    width: 50vw;
+    width: max-content;
+    max-width: 80vw;
     /* background-color: #2B2D42; */
     background-color: #ffffff;
     border-radius: 10px;
-    position: absolute; 
+    position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -275,6 +280,7 @@ a {
     display: block;
     width: 20vw;
     height: auto;
+    border-radius: 10px;
 }
 
 
@@ -294,6 +300,7 @@ a {
     font-family: "titulos_grandes";
     font-weight: 700;
     font-size: large;
+    padding: 5px 0;
 }
 
 /* #que_hacemos .section p:not(.titulo_imagen) { */
@@ -380,7 +387,7 @@ a {
 }
 
 #trabajos_realizados .div_1 div {
-    margin:20px;
+    margin: 20px;
     padding: 10px 15px;
     height: fit-content;
 
@@ -406,6 +413,7 @@ a {
     width: 75vh;
     padding: 10px 0;
 }
+
 #trabajos_realizados div .titulo_imagen {
     font-family: "titulos_grandes";
     margin: 10px 0px 10px 0px;
@@ -439,7 +447,7 @@ a {
 }
 
 #contacto .section_1__div2 div {
-    width:fit-content;
+    width: fit-content;
     margin: 0 0 0 40px;
 }
 
@@ -459,4 +467,24 @@ a {
 
 #contacto .como_llegar iframe {
     margin: 20px;
+}
+
+
+@media (max-width: 1430px) {
+    /* … */
+
+
+}
+
+
+@media (max-width: 950px) {
+    /* … */
+
+    .header nav {
+        display:none;
+        text-align: right;
+    }
+
+    
+
 }
