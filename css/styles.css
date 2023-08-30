@@ -335,6 +335,9 @@ a {
 
 /* Formato a página Quiénes Somos */
 
+#quienes_somos {
+    margin: auto;
+}
 
 #quienes_somos h1 {
     font-family: "titulos_grandes";
@@ -356,13 +359,15 @@ a {
 
 #quienes_somos .seccion_2 div {
     /* display: inline-block; */
-    margin: 5px;
-    padding: 5px
+    /* margin: 5px; */
+    /* padding: 5px */
 }
 
 #quienes_somos .seccion_2 div img {
     /* display: inline-block; */
     max-width: 25vw;
+    width:25vw;
+    border-radius: 15px;
 
 }
 
@@ -729,6 +734,14 @@ a {
         font-size: 25px;
     }
     
+
+    #quienes_somos .seccion_2 div div img {
+        width: 50vw;
+        max-width: 50vw;
+
+    }
+
+
     #trabajos_realizados .div_1 {
         display: flex;
         flex-direction: column;
