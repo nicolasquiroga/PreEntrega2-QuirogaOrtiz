@@ -48,7 +48,7 @@
                         <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./que_hacemos.html">Qué hacemos</a>
+                        <a class="nav-link" href="./que_hacemos.html">Qué hacemos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./quienes_somos.html">Quiénes Somos</a>
@@ -58,57 +58,64 @@
                             Realizados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <a class="nav-link active" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main id="contacto" class="d-flex flex-column gap-3">
-        <section class="section_1 d-flex flex-column w-75 m-auto">
-            <div class="section_1__div1 ms-4">
+    <main id="contacto" class="">
+        <section class="section_1 container m-auto">
+            <div class="section_1__div1 row ms-4">
                 <h1>Formulario de Contacto</h1>
             </div>
 
-            <form class="section_1__form w-75 m-3">
-                <div class="mb-3">
-                    <label for="exampleInputCompleteName" class="form-label">Nombre y Apellido</label>
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email </label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPhone" class="form-label">Celular</label>
-                    <input type="tel" class="form-control" aria-label="Amount (to the nearest dollar)">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPhone" class="form-label">Provincia</label>
-                    <input type="tel" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <form class="row w-75 section_1__form m-3">
+                <div class="col">
+
+                    <div class="mb-3">
+                        <label for="exampleInputCompleteName" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email </label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPhone" class="form-label">Celular</label>
+                        <input type="tel" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPhone" class="form-label">Provincia</label>
+                        <input type="tel" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Soy Humano</label>
+                    </div>
+                    <div class="">
+                        <span class="input-group-text">Consulta:</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
 
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Soy Humano</label>
-                </div>
-                <div class="">
-                    <span class="input-group-text">Consulta:</span>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
-        </section>
 
 
-        <section class="como_llegar d-flex w-75 m-auto justify-content-center ">
-            <p class="titulos_grandes ms-5">Cómo llegar</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.9414629460844!2d-66.34244469088028!3d-33.294308951794406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d43954196ca6cd%3A0x7fc2e3b4d49ecc83!2sSan%20Luis!5e0!3m2!1ses!2sar!4v1691326039778!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="p-4"></iframe>
+
+            <section class="como_llegar row-2 ">
+                <div class="col-12">
+
+                    <p class="titulos_grandes ms-5">Cómo llegar</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.9414629460844!2d-66.34244469088028!3d-33.294308951794406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d43954196ca6cd%3A0x7fc2e3b4d49ecc83!2sSan%20Luis!5e0!3m2!1ses!2sar!4v1691326039778!5m2!1ses!2sar"
+                            class=""></iframe>
+                </div>
+            </section>
         </section>
 
     </main>
